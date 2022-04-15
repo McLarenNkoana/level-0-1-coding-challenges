@@ -1,8 +1,15 @@
-import datetime
-
-
 def time(number):
-    number = datetime.timedelta(minutes = 133)
-    return number
+    mins = number%60
+    hours = number//60
 
-print(time(133))
+    if hours > 1:
+        print(hours,"hours,", end = ' ')
+    else:
+        print(hours, "hour,", end = ' ')
+    if mins > 1:
+        print(mins, "minutes")
+    else:
+        print(mins, "minute")
+
+time(71)
+
