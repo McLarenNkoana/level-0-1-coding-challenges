@@ -1,11 +1,10 @@
 def vowels(word):
     vowel = "aeiouAEIOU"
-    letters = ", ".join(character for character in word if character.lower() in vowel)
+    result = set()
+    string = ", "
+    for character in word:
+        if character in vowel:
+         result.add(character)
+    return (string.join(result))
 
-    print("Vowels: ", letters.lower())
-
-vowels("Umuzi")
-
-
-
-
+print("Vowels:",vowels("UMUZI").lower())
