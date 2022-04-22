@@ -5,6 +5,6 @@ def vowels(word):
     for character in word:
         if character in vowel:
          result.add(character)
-    return (string.join(result))
+    print("Vowels:",string.join(result).lower())
 
-print("Vowels:",vowels("UMUZI").lower())
+vowels("UMUZI")
